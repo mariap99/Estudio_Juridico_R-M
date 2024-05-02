@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+    color: #04363d;
+}
+body{
+    background-color: #f4f4ee;
+}
+/*HEADER*/
+header{
+    height: 10vh;
+    background-color: #4d6179bf;
+    padding: 0 50px;
+    color: #efeee6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    width: 100%;
+}
+.logo{
+    text-transform: uppercase;
+    color: #efeee6;
+    font-weight: 400;
+    font-size: 35px;
+}
+.menu a{
+    color: #efeee6;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s;
+    font-size: 18px;
+}
+.mostrar-menu,
+.esconder-menu{
+    font-size: 40px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+}
+.mostrar-menu{
+    order: 1;
+}
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover{
+    color: #af977a;
+}
+#check{
+    display: none;
+}
+#banner{
+    padding:0;
+    width: 100%;
+    background-color: #585d51e3;
+}
+#banner::before{
+    content: '';
+    background: rgba(77,77,92,0.6);
+    position: absolute;
+    height: 100%;
+}
+.contenido-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+
+    background-image: url(images/background_desktop.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-position-x: center;
+}
+.contenido-banner h1{
+    font-size: 5.5rem;
+    font-weight: 300;
+    padding-left: 40px;
+    color:  #11181b;
+    text-transform: uppercase;
+    }
+/*GENERAL SECCION*/
+html {
+    scroll-behavior: smooth;
+}
+seccion{
+    max-width: 1300px;
+    margin: auto;    
+}    
+.nosotros-box h4,
+.contenedor-servicios h4,
+.datos-ubicacion h4,
+.redes h4,
+.formulario h4{
+    font-size: 25px;
+    padding: 20px;
+    font-weight: 300;
+}
+#txt{
+    text-align: justify;
+    font-size: 18px;
+    padding: 20px;
+    font-weight: 200;
+}
+/*SOBRE NOSOTROS*/
+#nosotros{
+    display: flex;
+    flex-direction: column;
+}
+.contenedor-tittle{
+    text-align: center;
+    margin-top: 70px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.tittle{
+    font-size: 3rem;
+    font-weight: 300;
+    color:  #675128;
+}
+.contenedor-tittle i{
+    font-size: 1rem;
+    color:  #675128;
+    margin-top: 10px;
+}
+.imagen img{
+    width: 200px;
+    border-radius: 100%;
+}
+.nosotros-container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.nosotros-box{
+    padding: 50px 70px;
+}
+/*SERVICIOS*/
+#servicios{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+.contenedor-servicios{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.servicio{
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.servicio:hover{
+    background-color: #67512833;
+    transition: 0.8s;
+}
+#servicio-izq{
+    border-left: none;
+}
+#servicio1{
+    border-left: none;
+}
+/*CONTACTO*/
+#contacto{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+.contenedor-ubicacion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.mapa{
+    width: 600px;
+    height: 300px;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+}
+.datos-ubicacion{
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.datos-ubicacion i,
+.datos-ubicacion p{
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+.datos-ubicacion i,
+.datos-ubicacion span{
+    font-size: 20px;
+}
+.datos-ubicacion span{
+    font-weight: 400;
+}
+.redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.redes-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 15vh;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 1px #ccc;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.red{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+
+    width: 65px; 
+    height: 65px; 
+    background-color: #ccc; 
+    flex-direction: row;
+
+    margin-left: 40px;
+    margin-bottom: 20px;
+    border-radius: 100%;
+    transition: box-shadow 0.3s;
+    font-size: 35px;
+}
+.red:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: auto;
+
+    margin-bottom: 50px;
+    border-bottom: solid 1px #ccc;
+}
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    
+    width: 70%;
+    margin-bottom: 20px;
+
+}
+.formulario form input,
+.formulario form textarea{
+    border-radius: 10px;
+    border: solid 1px #ccc;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    outline: none;
+    font-size: 18px;
+    font-weight: 200;
+    transition: box-shadow 0.3s;
+}
+.formulario form input{
+    height: 50px;
+}
+.formulario form textarea{
+    height: 100px;
+}
+.formulario form input:hover,
+.formulario form textarea:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.button{
+    cursor: pointer;
+    height: 50px;
+    width: 150px;
+    border: solid 1px #4d6179bf;
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+    background-color: #4d6179bf;
+    margin-bottom: 20px;
+}
+.button:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+#button{
+    border: none;
+    background-color: transparent;
+    color: #efeee6;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#button:hover{
+    box-shadow: none;
+}
+
+/*FOOTER*/
+
+/*RESPONSIVE*/
+@media(max-width:768px){
+    /*SECCION GENERAL*/
+    .nosotros-box h4,
+    .contenedor-servicios h4,
+    .datos-ubicacion h4,
+    .redes h4,
+    .formulario h4{
+        font-size: 20px;
+        padding: 20px;
+        font-weight: 300;
+    }
+    .tittle{
+        font-size: 32px;
+    }
+    /*HEADER*/
+    .mostrar-menu,
+    .esconder-menu{
+    display: block;
+    }
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #4d6179;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0;
+        z-index: 100;
+        transition: 0.8s;
+    }
+    .menu a{
+        display: block;
+        padding: 20px;
+    }
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #check:checked~.menu{
+        right: 0;
+    }
+    /*BANNER*/
+    .contenido-banner{
+        background: url(images/background_responsive.png) center center/cover no-repeat;
+    }
+    .contenido-banner::after {
+        content: "";
+        position: absolute;
+        top: 10%;
+        left: 0;
+        width: 100%;
+        height: 90%;
+        background-color: rgba(204, 204, 204, 0.5); /* Color semitransparente (#ccc con 50% de opacidad) */
+    }
+    .contenido-banner h1{
+        font-size: 3rem;
+        text-align: center;
+        padding-left: 10px;
+        font-weight: 400;
+
+        position: relative;
+        z-index: 1;
+    }
+
+    /*NOSOTROS*/
+    #nosotros{
+        width: 100%;
+        flex-direction: column;
+    }
+    .nosotros-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .nosotros-box{
+        padding: 15px;
+    }
+     /*SERVICIOS*/
+     .contenedor-servicios{
+        flex-direction:column;
+        padding: 5px;
+    }
+    .servicio{
+        padding: 5px;
+        margin: 5px;
+    }
+    .contaxto-box,
+    .datos-box{
+        flex-direction: column;
+    }
+     /*CONTACTO*/
+     .redes h4,
+     .formulario h4{
+        text-align: center;
+     }
+     .red{
+        margin-left: 10px;
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+     }
+    .formulario .txt{
+        padding: 20px 30px;
+        margin-bottom: 10px;
+        text-align: justify;
+    }
+    .contenedor-ubicacion{
+        flex-direction: column-reverse;
+    }
+    .datos-ubicacion{
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    .mapa {
+        max-width: 300px;
+    }
+}
