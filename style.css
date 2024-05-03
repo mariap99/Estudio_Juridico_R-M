@@ -368,23 +368,13 @@ iframe{
     .contenido-banner{
         background: url(images/background_responsive.png) center center/cover no-repeat;
     }
-    .contenido-banner::after {
-        content: "";
-        position: absolute;
-        top: 10%;
-        left: 0;
-        width: 100%;
-        height: 90%;
-        background-color: rgba(204, 204, 204, 0.5); /* Color semitransparente (#ccc con 50% de opacidad) */
-    }
+
     .contenido-banner h1{
         font-size: 3rem;
         text-align: center;
-        padding-left: 10px;
-        font-weight: 400;
-
-        position: relative;
-        z-index: 1;
+        padding-left: 30px;
+        padding-top: 100px;
+        font-weight: 500;
     }
 
     /*NOSOTROS*/
