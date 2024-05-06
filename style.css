@@ -11,6 +11,9 @@
 body{
     background-color: #f4f4ee;
 }
+label{
+    color: #f4f4ee;
+}
 /*HEADER*/
 header{
     height: 10vh;
@@ -25,10 +28,14 @@ header{
     width: 100%;
 }
 .logo{
-    text-transform: uppercase;
-    color: #efeee6;
-    font-weight: 400;
-    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 200px;
+}
+.logo img{
+    width: 100%;
 }
 .menu a{
     color: #efeee6;
@@ -59,7 +66,7 @@ header{
 #banner{
     padding:0;
     width: 100%;
-    background-color: #585d51e3;
+   
 }
 #banner::before{
     content: '';
@@ -71,21 +78,28 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 50px;
+    text-align: start;
+    padding: 20px;
 
-    background-image: url(images/background_desktop.png);
+    background-image: url(media/background_desktop.png);
     height: 100vh;
     background-size: cover;
     background-position: center;
     background-position-x: center;
 }
-.contenido-banner h1{
-    font-size: 5.5rem;
-    font-weight: 300;
-    padding-left: 40px;
-    color:  #11181b;
-    text-transform: uppercase;
+.tittle-banner{
+    font-size: 2rem;
+    max-width: 800px;
+    text-align: center;
     }
+.tittle-banner h1,
+.tittle-banner p{
+    font-weight: 400;
+    color: #171610;
+}
+.tittle-banner h1{
+    font-weight: 500;
+}
 /*GENERAL SECCION*/
 html {
     scroll-behavior: smooth;
@@ -124,14 +138,14 @@ seccion{
     flex-direction: column;
 }
 .tittle{
-    font-size: 3rem;
-    font-weight: 300;
+    padding: 25px 25px 5px 25px;
+    font-size: 2.3rem;
+    font-weight: 400;
     color:  #675128;
 }
 .contenedor-tittle i{
-    font-size: 1rem;
+    font-size: 1.5rem;
     color:  #675128;
-    margin-top: 10px;
 }
 .imagen img{
     width: 200px;
@@ -366,17 +380,16 @@ iframe{
     }
     /*BANNER*/
     .contenido-banner{
-        background: url(images/background_responsive.png) center center/cover no-repeat;
+        background-image: url(media/background_responsivo.png);
+        background-size: cover;
+        background-position: center;
+        background-position-x: center;
     }
-
     .contenido-banner h1{
-        font-size: 3rem;
+        font-size: 2.5rem;
         text-align: center;
-        padding-top:150px;
-        padding-left: 7px;
-        font-weight: 300;
+        padding-left: 10px;
     }
-
     /*NOSOTROS*/
     #nosotros{
         width: 100%;
