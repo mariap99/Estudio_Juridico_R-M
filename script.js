@@ -24,3 +24,19 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+document.getElementById('button').addEventListener('click', function() {
+    var nombre = document.getElementById('nombre').value;
+    var email = document.getElementById('email').value;
+    var telefono = document.getElementById('telefono').value;
+    var mensaje = document.getElementById('mensaje').value;
+
+    var mailtoLink = 'mailto:maria99merlo@gmail.com' +
+                    '?subject=' + encodeURIComponent('Mensaje desde el formulario de contacto') +
+                    '&body=' + encodeURIComponent('Nombre: ' + nombre + '\n' +
+                                                    'Email: ' + email + '\n' +
+                                                    'Teléfono: ' + telefono + '\n' +
+                                                    'Mensaje: ' + mensaje);
+    
+    window.location.href = mailtoLink;
+});
