@@ -285,7 +285,7 @@ iframe{
 .formulario form input,
 .formulario form textarea{
     border-radius: 10px;
-    border: solid 1px #ccc;
+    border: none;
     margin-bottom: 15px;
     margin-top: 10px;
     outline: none;
@@ -301,33 +301,38 @@ iframe{
 }
 .formulario form input:hover,
 .formulario form textarea:hover{
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid #ccc;
+}
+.button-container{
+    display: flex;
+    justify-content: flex-end;
 }
 .button{
     cursor: pointer;
     height: 50px;
     width: 150px;
-    border: solid 1px #4d6179bf;
+    border: none;
+    background-color: #04363d;
 
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
 
-    border-radius: 10px;
-    background-color: #4d6179bf;
+    border-radius: 5px;
     margin-bottom: 20px;
 }
 .button:hover{
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
     cursor: pointer;
 }
 #button{
     border: none;
     background-color: transparent;
-    color: #efeee6;
+
     text-transform: uppercase;
     font-weight: 600;
+    color: #ccc;
 }
 #button:hover{
     box-shadow: none;
