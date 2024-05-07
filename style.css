@@ -12,7 +12,7 @@ body{
     background-color: #f4f4ee;
 }
 label{
-    color: #f4f4ee;
+    color: #04363d;
 }
 /*HEADER*/
 header{
@@ -30,9 +30,8 @@ header{
 .logo{
     display: flex;
     justify-content: center;
-    align-items: center;
-
-    max-width: 200px;
+    text-align: start;
+    max-width: 150px;
 }
 .logo img{
     width: 100%;
@@ -51,6 +50,7 @@ header{
     cursor: pointer;
     display: none;
     transition: 0.4s;
+    color: #efeee6;
 }
 .mostrar-menu{
     order: 1;
@@ -91,6 +91,7 @@ header{
     font-size: 2rem;
     max-width: 800px;
     text-align: center;
+    padding: 10px;
     }
 .tittle-banner h1,
 .tittle-banner p{
@@ -384,11 +385,26 @@ iframe{
         background-size: cover;
         background-position: center;
         background-position-x: center;
+
+        justify-content: start;
     }
-    .contenido-banner h1{
-        font-size: 2.5rem;
+    .tittle-banner{
+        margin-top: 250px;
+        max-width: 100%;
         text-align: center;
-        padding-left: 10px;
+        }
+    .tittle-banner h1,
+    .tittle-banner p{
+        color: #171610;
+    }
+    .tittle-banner h1{
+        font-weight: 500;
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    .tittle-banner p{
+        font-size: 1rem;
+        font-weight: 400;
     }
     /*NOSOTROS*/
     #nosotros{
