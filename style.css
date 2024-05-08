@@ -101,6 +101,10 @@ header{
 .tittle-banner h1{
     font-weight: 500;
 }
+.tittle-banner p{
+    text-transform: uppercase;
+    margin-top: 10px;
+}
 .ws-button {
     position: fixed;
     bottom: 30px;

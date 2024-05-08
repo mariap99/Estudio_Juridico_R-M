@@ -24,4 +24,16 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    // Redirigir automáticamente a la página de inicio
+    window.location.href = 'tu_pagina_de_inicio.html';
 
+    // Limpiar los valores de los campos de entrada
+    document.getElementById('nombre').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('telefono').value = '';
+    document.getElementById('mensaje').value = '';
+
+    // Prevenir el envío normal del formulario
+    event.preventDefault();
+});
